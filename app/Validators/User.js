@@ -7,5 +7,6 @@ class User {
       password: 'required'
     }
   }
+
 }
 module.exports = User
