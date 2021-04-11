@@ -55,6 +55,6 @@ const serverMiddleware = [
 ]
 
 Server
-  .registerGlobal(globalMiddleware);
+  .registerGlobal(globalMiddleware)
   .registerNamed(namedMiddleware)
   .use(serverMiddleware)
