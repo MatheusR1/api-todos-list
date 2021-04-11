@@ -32,7 +32,7 @@ const globalMiddleware = [
 |
 | // use
 | Route.get().middleware('auth')
-|;
+|;;
 */
 const namedMiddleware = {
   auth: 'Adonis/Middleware/Auth',
