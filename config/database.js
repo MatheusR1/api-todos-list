@@ -8,7 +8,7 @@ const Helpers = use('Helpers')
 
 const Url = require('url-parse')
 const DATABASE_URL = new Url(Env.get('DATABASE_URL'))
-
+const { Pool } = require('pg');
 module.exports = {
   /*
   |--------------------------------------------------------------------------
@@ -73,6 +73,13 @@ module.exports = {
   | npm i --save pg;
   |
   */
+  //  pool = new Pool({
+  //   connectionString: process.env.DATABASE_URL,
+  //   ssl: {
+  //     rejectUnauthorized: false
+  //   }
+  // }),
+
   pg: {
     client: 'pg',
     connection: {
@@ -84,5 +91,8 @@ module.exports = {
       ssl:true
     },
     debug: Env.get('DB_DEBUG', false)
+  },
+  ssl: {
+    rejectUnauthorized: false
   }
 }
