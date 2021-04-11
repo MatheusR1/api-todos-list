@@ -65,7 +65,7 @@ module.exports = {
 
   /*
   |--------------------------------------------------------------------------
-  | PostgreSQL;
+  | PostgreSQL;;
   |--------------------------------------------------------------------------
   |
   | Here we define connection settings for PostgreSQL database.
